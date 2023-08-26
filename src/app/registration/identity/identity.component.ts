@@ -7,14 +7,13 @@ import {FormGroup, FormGroupDirective} from '@angular/forms';
   styleUrls: ['./identity.component.scss']
 })
 export class IdentityComponent implements OnInit {
-
   @Input() formGroupName!: string
 
   form!: FormGroup
   constructor(private rootFormGroup: FormGroupDirective) { }
 
   ngOnInit(): void {
-    this.form = this.rootFormGroup.control.get(this.formGroupName) as FormGroup
+    this.form = this.rootFormGroup.form.get(this.formGroupName) as FormGroup
   }
 
 }
