@@ -35,8 +35,7 @@ describe('AddressComponent', () => {
     TestBed.configureTestingModule({
       imports:[ReactiveFormsModule, MatCardModule, MatFormFieldModule, MatInputModule, NoopAnimationsModule],
       declarations: [AddressComponent],
-      providers:[{provide: FormGroupDirective, useValue: formGroupDirective}],
-      schemas: [NO_ERRORS_SCHEMA]
+      providers:[{provide: FormGroupDirective, useValue: formGroupDirective}]
     });
     fixture = TestBed.createComponent(AddressComponent);
 

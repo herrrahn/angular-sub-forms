@@ -17,7 +17,7 @@ describe('RegistrationComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports:[ReactiveFormsModule, MatCardModule, MatFormFieldModule, MatInputModule, NoopAnimationsModule],
-      declarations: [RegistrationComponent, IdentityComponent, AddressComponent]
+      declarations: [RegistrationComponent] //, IdentityComponent, AddressComponent]
     });
     fixture = TestBed.createComponent(RegistrationComponent);
     component = fixture.componentInstance;
